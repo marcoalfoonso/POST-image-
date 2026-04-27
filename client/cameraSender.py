@@ -2,7 +2,7 @@ import cv2
 import requests
 
 # URL del endpoint POST
-url = "https://post-image-j0l5.onrender.com"
+url = "https://post-image-j0l5.onrender.com/upload"
 
 cap = cv2.VideoCapture(0)
 
