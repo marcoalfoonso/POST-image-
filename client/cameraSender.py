@@ -4,7 +4,10 @@ import requests
 # URL del endpoint POST
 url = "https://post-image-j0l5.onrender.com/upload"
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1,cv2.CAP_DSHOW)
+
+cap.set(3, 640)  # ancho
+cap.set(4, 480)  # alto
 
 if not cap.isOpened():
     print("No se pudo abrir la cámara")
